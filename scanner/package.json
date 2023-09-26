@@ -3,7 +3,8 @@
   "module": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "bun --hot run src/index.js"
+    "start": "bun --hot run src/index.js",
+    "build all": "bun build scanner.ts outdir ./build --target=browser"
   },
   "devDependencies": {
     "bun-types": "latest"
