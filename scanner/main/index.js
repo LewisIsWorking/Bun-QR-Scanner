@@ -5,7 +5,7 @@ var server = Bun.serve({
     const url = new URL(req.url);
     switch (url.pathname) {
       case "/scanner.ts":
-        return new Response(Bun.file(import.meta.dir + "/build/scanner.ts"), {
+        return new Response(Bun.file(import.meta.dir + "/main/scanner.ts"), {
           headers: {
             "Content-Type": "text/javascript; charset=utf-8"
           }

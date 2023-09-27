@@ -9,7 +9,7 @@ const server = Bun.serve({
     fetch: async (req) => {
         console.log('serving scanner.js');
         if (req.url.endsWith('scanner.js')) {
-            return new Response(Bun.file('./pages/scanner.js'));
+            return new Response(Bun.file('./main/scanner.js'));
         }
         else if (req.url.endsWith('qp-scanner.umd.min.js')){
             return new Response(bun.file('./pages/qp-scanner.umd.js.min'))
